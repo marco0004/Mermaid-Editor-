@@ -14,11 +14,18 @@ Este proyecto nace de la necesidad de tener un entorno de diagramación robusto 
 
 * **Sintaxis Mermaid:** Aprovecha la potencia y simplicidad de "Diagrams as Code".
 * **Almacenamiento Local:** Organización de archivos `.mmd` o `.mermaid` directamente en tu sistema de archivos.
-* **Exportación Libre:** Genera versiones en imagen (PNG/SVG) sin marcas de agua.
+* **Exportación Libre:** Genera versiones como standalone webpage
 
 ## 📋 Uso Básico
 
 Para crear un nuevo diagrama, simplemente define el bloque de código:
+
+ejemplo:  
+graph TD  
+    A[Inicio] --> B{Local?}  
+    B -- Sí --> C[Libertad Total]  
+    B -- No --> D[Restricciones SaaS]  
+    C --> E[Fin]  
 
 ```mermaid
 graph TD
